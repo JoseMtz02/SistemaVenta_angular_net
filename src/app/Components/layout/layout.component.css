@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Use a clean and professional font */
+  background-color: #f0f2f5; /* Light gray background for a clean look */
+}
+
+/* Toolbar Styles */
+.toolbar {
+  background-color: #1f2937; /* Dark slate gray for a modern look */
+  color: #e5e7eb; /* Light gray for text to contrast with dark background */
+  padding: 0 16px; /* Padding for better spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+}
+
+.toolbar-title {
+  margin: 0;
+  font-size: 26px; /* Slightly larger font size for a prominent title */
+  flex: 1; /* Push the title to take available space */
+}
+
+.menu-button {
+  color: #e5e7eb; /* Light gray for the button to match toolbar text */
+  transition: color 0.3s ease; /* Smooth transition effect for hover state */
+}
+
+.menu-button:hover {
+  color: #60a5fa; /* Blue color on hover to match icons */
+}
+
+.spacer {
+  flex: 1;
+}
+
+.user-info {
+  font-size: 14px;
+  color: #e5e7eb; /* Light gray for better readability */
+  margin-right: 20px;
+}
+
+.mat-icon-button {
+  color: #e5e7eb; /* Light gray to match the toolbar text */
+}
+
+/* Sidenav Styles */
+.sidenav-container {
+  height: 100vh; /* Full viewport height */
+}
+
+.sidenav {
+  width: 240px; /* Slightly wider sidenav for better navigation */
+  background-color: #1f2937; /* Match sidenav background with toolbar */
+  color: #e5e7eb; /* Light gray text color */
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+
+}
+
+.mat-nav-list {
+  padding: 0;
+}
+
+.nav-item {
+  padding: 12px 20px; /* Padding for better spacing */
+  color: #e5e7eb; /* Light gray for text color */
+  border-radius: 8px; /* Rounded corners for menu items */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover state */
+}
+
+.nav-item:hover {
+  background-color: #374151; /* Darker gray background on hover */
+  color: #e5e7eb; /* Light gray text on hover */
+}
+
+.mat-list-icon {
+  color: #60a5fa; /* Blue color for icons */
+}
+
+.mat-list-item div {
+  font-size: 16px; /* Font size for menu items */
+}
+
+/* Content Styles */
+.content {
+  padding: 20px;
+  background-color: #ffffff; /* White background for content area */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}

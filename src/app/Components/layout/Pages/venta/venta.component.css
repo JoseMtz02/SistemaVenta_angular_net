@@ -3,6 +3,58 @@
   width: 100%;
 }
 
-table{
+.page-title {
+  margin: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Contenedor de la tabla con sombra */
+.mat-elevation-z2 {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Asegura que el contenido no se desborde del borde redondeado */
+}
+
+/* Estilo para la tabla */
+table {
   width: 100%;
+  border-collapse: collapse; /* Elimina el espacio entre las celdas */
+}
+
+/* Encabezados de la tabla */
+th.mat-header-cell {
+  background-color: #f5f5f5; /* Fondo gris claro para los encabezados */
+  color: #333; /* Texto oscuro para mejor contraste */
+  font-size: 16px; /* Tamaño de fuente ligeramente mayor */
+  padding: 12px; /* Padding para mayor separación en los encabezados */
+  text-align: left; /* Alineación del texto a la izquierda */
+  border-bottom: 2px solid #ddd; /* Línea de separación entre el encabezado y el contenido */
+}
+
+/* Celdas de la tabla */
+td.mat-cell {
+  padding: 12px; /* Padding para separar el contenido de las celdas */
+  border-bottom: 1px solid #ddd; /* Línea de separación entre filas */
+  font-size: 14px; /* Tamaño de fuente estándar para el contenido */
+  color: #666; /* Color de texto más claro para un contraste suave */
+}
+
+/* Fila de la tabla al pasar el mouse por encima */
+tr.mat-row:hover {
+  background-color: #fafafa; /* Fondo ligeramente gris para la fila al pasar el mouse */
+}
+
+/* Botones de acción dentro de la tabla */
+button.mat-icon-button {
+  margin: 0; /* Elimina el margen para ajustar el botón al borde de la celda */
+}
+
+/* Estilo para la fila sin datos en la tabla */
+tr.mat-row.mat-no-data-row {
+  text-align: center;
+  color: #888;
+  font-style: italic; /* Cursiva para el texto de la fila sin datos */
+  height: 50px; /* Altura fija para la fila sin datos */
 }

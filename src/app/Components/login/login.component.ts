@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit {
       next: (data) => {
         if (data.status) {
           this._utilidadServicio.guardarSesionUsuario(data.value);
-          this.router.navigate(["pages"]);
+          this.router.navigate(["pages/dashboard"]);
         } else {
           this._utilidadServicio.mostrarAlerta("No se encontraron coincidencias", "Opps!");
         }
@@ -53,9 +53,9 @@ export class LoginComponent implements OnInit {
         this.mostrarLoading = false;
       },
       error: (err) => {
-        console.error('Error en iniciarSesion:', err);  // Loguea el error para revisar en consola
+        console.error('Error en iniciarSesion:', err);  
         this._utilidadServicio.mostrarAlerta("Hubo un error", "Opps!");
-        this.mostrarLoading = false;  // Asegúrate de ocultar el loading en caso de error
+        this.mostrarLoading = false;
       }
     });
 }

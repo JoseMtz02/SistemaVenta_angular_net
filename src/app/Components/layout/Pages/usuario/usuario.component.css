@@ -1,9 +1,58 @@
+.page-title {
+  margin: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
 
-table{
+.user-card {
+  margin: 20px 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mat-card-header {
+  padding-bottom: 16px;
+}
+
+.search-field {
   width: 100%;
 }
 
-.mat-form-field{
+.mat-form-field {
   font-size: 14px;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+table {
   width: 100%;
+  border-collapse: collapse;
+}
+
+th.mat-header-cell {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #f0f2f5;
+  color: #333;
+  padding: 12px;
+}
+
+td.mat-cell {
+  font-size: 14px;
+  padding: 12px;
+  color: #666;
+}
+
+.mat-icon-button {
+  margin: 0 4px;
+}
+
+.mat-row.mat-no-data-row {
+  text-align: center;
+  color: #888;
 }

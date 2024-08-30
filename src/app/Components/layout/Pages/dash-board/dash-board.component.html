@@ -1,60 +1,51 @@
-<h1 style="margin:20px 0px 0px 40px">Inicio - Resumen última semana</h1>
+<h1 class="dashboard-title">Inicio - Resumen última semana</h1>
 
-<mat-card style="margin:20px 40px 40px 40px">
-
+<mat-card class="dashboard-card">
   <mat-card-content>
-
-    <mat-grid-list cols="3" rowHeight="100px">
-
+    <mat-grid-list cols="3" rowHeight="150px" gutterSize="20px">
       <mat-grid-tile>
         <mat-card class="card-info">
           <mat-card-header>
-            <div mat-card-avatar>
+            <div mat-card-avatar class="icon-container">
               <mat-icon color="accent">payments</mat-icon>
             </div>
             <mat-card-title>Total Ingresos</mat-card-title>
             <mat-card-subtitle>MX ${{totalIngresos}}</mat-card-subtitle>
           </mat-card-header>
         </mat-card>
-
       </mat-grid-tile>
 
       <mat-grid-tile>
         <mat-card class="card-info">
           <mat-card-header>
-            <div mat-card-avatar>
+            <div mat-card-avatar class="icon-container">
               <mat-icon color="warn">sell</mat-icon>
             </div>
             <mat-card-title>Total Ventas</mat-card-title>
-            <mat-card-subtitle>MX ${{totalVentas}}</mat-card-subtitle>
+            <mat-card-subtitle>{{totalVentas}}</mat-card-subtitle>
           </mat-card-header>
         </mat-card>
-
       </mat-grid-tile>
 
       <mat-grid-tile>
         <mat-card class="card-info">
           <mat-card-header>
-            <div mat-card-avatar>
+            <div mat-card-avatar class="icon-container">
               <mat-icon color="primary">collections_bookmark</mat-icon>
             </div>
             <mat-card-title>Total Productos</mat-card-title>
             <mat-card-subtitle>{{totalProductos}}</mat-card-subtitle>
           </mat-card-header>
         </mat-card>
-
       </mat-grid-tile>
     </mat-grid-list>
 
-    <mat-card style="margin-top: 15px;">
+    <mat-card class="chart-card">
       <mat-card-content>
-        <div style="width: 100%; height: 400px;">
+        <div class="chart-container">
           <canvas id="chartBarras"></canvas>
         </div>
       </mat-card-content>
-
     </mat-card>
-
   </mat-card-content>
-
 </mat-card>
